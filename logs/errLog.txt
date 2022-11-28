@@ -1,0 +1,2 @@
+28112022	15:01:33	bac8403b-2ccc-48db-a93f-40435ff3b04e	Error: Not allowed by CORS
+28112022	15:01:34	b125f180-bfa6-42e7-a8f5-b59e918d974f	Error: Not allowed by CORS
