@@ -42,7 +42,12 @@ const handleLogin = async (req, res) => {
             // Send refresh & access token
             // Saving & sending as HTTP cookie - more secure
             //MaxAge calculated in milliseconds: 24h times 60m times 60s times 1000ms = a day.
-            res.cookie('jwt', refreshToken, { httpOnly: true, maxAge: 24 * 60 * 60 * 1000 });
+            res.cookie('jwt', refreshToken, { 
+                httpOnly: true, 
+                //sameSite: 'Nonem', 
+                secure: true, 
+                maxAge: 24 * 60 * 60 * 1000 
+            });
             res.json({ accessToken });
         } else {
             res.sendStatus(401);

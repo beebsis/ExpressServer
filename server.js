@@ -9,10 +9,15 @@ const errorHandler = require('./middleware/errorHandler');
 // const { allowedNodeEnvironmentFlags } = require('process');
 const verifyJWT = require('./middleware/verifyJWT');
 const cookieParser = require('cookie-parser');
+const credentials = require('./middleware/credentials');
 const PORT = process.env.PORT || 3500;
 
 //  Custom logger middleware
 app.use(logger);
+
+// Checking credentials before CORS!
+// and fetch cookies credentials requirements
+app.use(credentials);
 
 //  CORS APPLIANCE
 app.use(cors(corsOptions));
@@ -32,7 +37,7 @@ app.use(cookieParser());
 // Built-in middleware for static files
 app.use('/', express.static(path.join(__dirname, '/public')));
 
-//Routes from route dir & subdir
+//Routes from route dirs
 app.use('/', require('./routes/root'));
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));

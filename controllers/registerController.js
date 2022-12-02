@@ -13,9 +13,11 @@ const handleNewUser = async (req, res) => {
     const duplicate = usersDB.users.find(person => person.username === user);
     if (duplicate) return res.sendStatus(409); //Conflict 
     try {
-        //encrypt the password
+        // encrypt the password with bcrypt
+        // bcrypt default salt is 10 salts 1 salt is double.
+        // default hash is like 2^10
         const hashedPwd = await bcrypt.hash(pwd, 10);
-        //store the new user
+        // store the new user
         const newUser = { "username": user, "password": hashedPwd };
         usersDB.setUsers([...usersDB.users, newUser]);
         await fsPromises.writeFile(
