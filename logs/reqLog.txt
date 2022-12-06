@@ -146,3 +146,6 @@
 02122022	11:32:19	2f0ce10f-49b0-458c-8762-f2f64b8fd669	GET	undefined	/logout
 02122022	11:32:23	d645b4d1-e210-4d20-97ee-22e8fa10edde	POST	undefined	/auth
 02122022	11:32:30	eb7289f9-f5b8-4991-aee5-52cb51a22dcb	GET	undefined	/refresh
+06122022	14:48:49	98ffcbb9-ef56-4e15-8777-b73bf9c439d2	GET	undefined	/
+06122022	14:48:50	bf456f50-4d46-4b7b-a74f-462cc43f08a5	GET	undefined	/css/style.css
+06122022	14:48:50	f6f743ce-2898-4885-b3fe-b1c5e42a1af7	GET	undefined	/favicon.ico
