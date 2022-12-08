@@ -10,7 +10,7 @@ const verifyJWT = (req, res, next) => {
         token,
         process.env.ACCESS_TOKEN_SECRET,
         (err, decoded) => {
-            if (err) return res.sendStatus(403); //Invalid token (forbidden)
+            if (err) return res.sendStatus(403); //Invalid token (forbidden) - YOU SHALL NOT PASS
             req.user = decoded.UserInfo.username;
             req.roles = decoded.UserInfo.roles;
             next();

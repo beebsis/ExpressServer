@@ -5,8 +5,7 @@ const verifyRoles = (...allowedRoles) => {
         if (!req?.roles) return res.sendStatus(401); //Un Auth
         const rolesArray = [...allowedRoles];
         
-        /*
-        // posts the role ids to the console
+        /*// posts the role ids to the console
         console.log(rolesArray);
         console.log(req.roles);
         */

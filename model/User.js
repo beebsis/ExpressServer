@@ -1,3 +1,12 @@
+/*
+    This is how Mongoose structures it data to MongoDB
+    Something I actually like quite a lot and it makes things very easy
+    to understand and get into.
+
+    Here we give users(not employees) their username, roles and password.
+    By default, the role is "user: 50".
+*/
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 

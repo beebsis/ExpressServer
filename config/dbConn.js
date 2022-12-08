@@ -1,3 +1,6 @@
+// Connection to our MongoDB
+// Remember to change the "test" into the Collection name
+
 const mongoose = require('mongoose');
 
 const connectDB = async () => {

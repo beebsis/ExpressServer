@@ -1,10 +1,15 @@
+//  Logs API events
+// The list can get a bit long
 const { format } = require('date-fns');
 const { v4: uuid } = require('uuid');
 
+// Here I use fs promises and path as you can see
+// This is due to us writing to a local file and not our Cloud DB. 
 const fs = require('fs');
 const fsPromises = require('fs').promises;
 const path = require('path');
 
+// Async, need it to run all the time
 const logEvents = async (message, logName) => {
     const dateTime = `${format(new Date(), 'ddMMyyyy\tHH:mm:ss')}`;
     const logItem = `${dateTime}\t${uuid()}\t${message}\n`;

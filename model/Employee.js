@@ -1,3 +1,9 @@
+/*
+    This is how Mongoose structures it data to MongoDB
+    Something I actually like quite a lot and it makes things very easy
+    to understand and get into.
+*/
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 

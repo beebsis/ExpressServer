@@ -1,3 +1,5 @@
+//  If error, throw it in the errLog.txt
+// If errLog.txt doesn't exist, create.
 const { logEvents } = require('./logEvents');
 
 const errorHandler = (err, req, res, next) => {

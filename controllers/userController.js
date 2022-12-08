@@ -1,3 +1,6 @@
+// This is a user, not an employee.
+// Users are useable logins on the site which employees aren't.
+
 const User = require('../model/User');
 
 const getAllUsers = async (req, res) => {
