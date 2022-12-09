@@ -1,3 +1,7 @@
 28112022	15:01:33	bac8403b-2ccc-48db-a93f-40435ff3b04e	Error: Not allowed by CORS
 28112022	15:01:34	b125f180-bfa6-42e7-a8f5-b59e918d974f	Error: Not allowed by CORS
 30112022	11:39:14	d39771c2-f832-4d2a-9149-937526cecfd5	ReferenceError: refreshToken is not defined
+09122022	08:44:39	34252345-7f5a-4156-a038-5cf1ec7fe042	SyntaxError: Unexpected string in JSON at position 78
+09122022	09:17:09	72b78ee7-465f-43a2-aaf4-b48ec53a7665	SyntaxError: Unexpected token P in JSON at position 52
+09122022	09:17:09	a107eab4-1a31-4f97-9ef5-c54f05091a7a	SyntaxError: Unexpected token P in JSON at position 52
+09122022	09:17:14	075c9736-1419-4c27-aa54-d8abf6c311b7	SyntaxError: Unexpected token P in JSON at position 52
