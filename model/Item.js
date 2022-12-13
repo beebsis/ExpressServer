@@ -7,8 +7,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const itemSchema = new Schema({
-    manufacturer: {
+const vareSchema = new Schema({
+    fabrikant: {
         type: String,
         required: true
     },
@@ -16,19 +16,28 @@ const itemSchema = new Schema({
         type: String,
         required: true
     },
-    type: {
-        type: String,
-        required: true
+    typer: {
+        PC: {
+            type: String,
+            default: 4462
+        },
+        Mouse: Number,
+        Keyboard: Number,
+        Screen: Number
     },
     serial: {
         type: String,
         required: true
     },
     status: {
-        type: String,
-        default: "In-Stock"
+        ind: {
+            type: String,
+            default: 243
+        },
+        ud: Number,
+        reserveret: Number
     }
 
 });
 
-module.exports = mongoose.model('Item', itemSchema);
+module.exports = mongoose.model('Vare', vareSchema);

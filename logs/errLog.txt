@@ -5,3 +5,25 @@
 09122022	09:17:09	72b78ee7-465f-43a2-aaf4-b48ec53a7665	SyntaxError: Unexpected token P in JSON at position 52
 09122022	09:17:09	a107eab4-1a31-4f97-9ef5-c54f05091a7a	SyntaxError: Unexpected token P in JSON at position 52
 09122022	09:17:14	075c9736-1419-4c27-aa54-d8abf6c311b7	SyntaxError: Unexpected token P in JSON at position 52
+13122022	13:23:05	08cd29d9-facf-4a25-94fc-7808a89f2172	SyntaxError: Unexpected number in JSON at position 162
+13122022	13:23:47	0c6fb195-3053-4af5-9cde-473a38879f6e	SyntaxError: Unexpected number in JSON at position 162
+13122022	13:23:55	0ae74a0d-f0d1-4310-9e3e-857621673163	SyntaxError: Unexpected number in JSON at position 162
+13122022	13:24:19	1952e6e0-1718-4a41-b25d-d8936f0fc63c	SyntaxError: Unexpected token } in JSON at position 305
+13122022	13:24:44	c70a1b09-0388-4c03-b951-8312591c89d4	SyntaxError: Unexpected number in JSON at position 162
+13122022	13:25:45	6777876d-5323-48d7-bfeb-7858164ae70e	SyntaxError: Unexpected number in JSON at position 162
+13122022	13:25:53	4856f707-85cb-4490-93e4-dd80ee02a6cf	SyntaxError: Unexpected number in JSON at position 162
+13122022	14:17:46	598bea05-d0c4-499f-a490-393d9f419d31	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:18:56	6ae3d85d-4eeb-4f61-8fde-6451acf8750f	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:25:23	ddfd0093-d446-4330-9e6f-ee196378c5de	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:27:13	e96ce1ff-4b5e-451a-93dd-32d78fbeff2d	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:33:03	36386782-b113-49cc-8faf-985701bb754b	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:33:15	45031b72-8461-4809-abf8-95b7eef3cf26	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:34:01	07f6453e-5c9d-4481-8b46-bfd162adeecb	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:34:24	3bff2244-8d9d-43e1-a2ec-de0a47967c1a	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:34:58	cf63a193-e2b7-4c34-9a86-f526c6578b33	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:55:18	2d440cb6-d8fb-4bde-9924-d9767fc8b76b	SyntaxError: Unexpected number in JSON at position 157
+13122022	14:59:47	1a6d8ae2-3603-480b-b743-38adbeb8491b	SyntaxError: Unexpected number in JSON at position 157
+13122022	15:10:33	a6c29b47-efc3-4f05-a5e7-41ab37ae1033	SyntaxError: Unexpected number in JSON at position 157
+13122022	15:10:36	24ce2ba4-766d-4f2d-ad53-9a95b679f3d1	SyntaxError: Unexpected number in JSON at position 157
+13122022	15:15:53	9ef46393-1545-47fc-834c-2905840e8849	SyntaxError: Unexpected number in JSON at position 157
+13122022	15:16:03	d4c419ab-1292-4562-b6e7-ec0432a034e3	SyntaxError: Unexpected number in JSON at position 157

@@ -25,9 +25,15 @@ const userSchema = new Schema({
     },
     password: {
         type: String,
-        require: true,
+        require: true
     },
-    refreshToken: String
+    fornavn: {
+        type: String
+    },
+
+    
+
+    refreshToken: String,
 });
 
 module.exports = mongoose.model('Users', userSchema);
