@@ -30,8 +30,31 @@ const userSchema = new Schema({
     fornavn: {
         type: String
     },
+    efternavn: {
+        type: String
+    },
+    uniId: {
+        type: String
+    },
+    stamklasse: {
+        type: String
+    },
+    cprNr: {
+        type: String
+    },
+    lokation: {
+        adresse: {
+            type: String
+        },
+        zip: {
+            type: String
+        },
+        by: {
+            type: String
+        },
+    },
 
-    
+
 
     refreshToken: String,
 });

@@ -27,3 +27,4 @@
 13122022	15:10:36	24ce2ba4-766d-4f2d-ad53-9a95b679f3d1	SyntaxError: Unexpected number in JSON at position 157
 13122022	15:15:53	9ef46393-1545-47fc-834c-2905840e8849	SyntaxError: Unexpected number in JSON at position 157
 13122022	15:16:03	d4c419ab-1292-4562-b6e7-ec0432a034e3	SyntaxError: Unexpected number in JSON at position 157
+14122022	10:31:51	08b49722-95e4-49b3-afdd-d17150566913	SyntaxError: Unexpected token } in JSON at position 154

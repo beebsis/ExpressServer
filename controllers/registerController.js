@@ -8,8 +8,8 @@ const handleNewUser = async (req, res) => {
     if (!user || !pwd) return res.status(400).json({ 'message': 'All fields are required.' });
     */
 
-    const { user,  pwd, firstN} = req.body;
-    if (!user || !pwd || !firstN) return res.status(400).json({ 'message': 'All fields are required.' });
+    const { user,  pwd, firstN, lastN, uni_id, stamClass, cpr, address, city, postal} = req.body;
+    if (!user || !pwd || !firstN || !lastN || !uni_id || !stamClass || !cpr || !address || !city || !postal) return res.status(400).json({ 'message': 'All fields are required.' });
 
     /*
     const { user,  pwd, firstName, lastName, uni_id, stamClass, cpr, address, postal, city, mail, mobile} = req.body;
@@ -17,13 +17,15 @@ const handleNewUser = async (req, res) => {
     */
     
     // check for duplicate usernames in the db
-    const duplicate = await User.findOne({ username: user}).exec(); // Using exec because of "findOne"
-    //const duplicate2 = await User.findOne({ uniId: uni_id}).exec();
-    
+    const username_duplicate = await User.findOne({ username: user}).exec(); // Using exec because of "findOne"
+    const uniId_duplicate = await User.findOne({uniId: uni_id}).exec();
+    const cpr_duplicate = await User.findOne({cprNr: cpr}).exec();
+
     //const duplicate = usersDB.users.find(person => person.username === user);
-    if (duplicate) return res.sendStatus(409); //Conflict 
+    if (username_duplicate || uniId_duplicate || cpr_duplicate) return res.sendStatus(409); //Conflict 
     
     try {
+
         // encrypt the password with bcrypt
         // bcrypt default salt is 10 salts 1 salt is double.
         // default hash is like 2^10
@@ -32,8 +34,15 @@ const handleNewUser = async (req, res) => {
         // create & store the new user
         const result = await User.create({
             "username": user,
+            "fornavn": firstN,
+            "efternavn": lastN,
+            "uniId": uni_id,
+            "stamklasse": stamClass,
+            "cprNr": cpr,
             "password": hashedPwd,
-            "firstname": firstN
+            "adresse": address,
+            "zip": postal,
+            "by": city
         });
 
         /*
