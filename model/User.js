@@ -42,17 +42,16 @@ const userSchema = new Schema({
     cprNr: {
         type: String
     },
-    lokation: {
-        adresse: {
-            type: String
-        },
-        zip: {
-            type: String
-        },
-        by: {
-            type: String
-        },
+    adresse: {
+        type: String
     },
+    zip: {
+        type: String
+    },
+    by: {
+        type: String
+    },
+
 
 
 
