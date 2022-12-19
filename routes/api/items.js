@@ -10,8 +10,10 @@ router.route('/')
     .put(itemsController.updateItem)
     .delete(itemsController.deleteItem)
 
+    // Currently having issues with verifying roles for some reason, haven't looked into it
+    // It's currently lower on my priority list.
     /*
-        .get(verifyRoles(ROLES_LIST.Admin), itemsController.getAllItems)
+    .get(verifyRoles(ROLES_LIST.Admin), itemsController.getAllItems)
     .post(verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor), itemsController.createNewItem)
     .put(verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor), itemsController.updateItem)
     .delete(verifyRoles(ROLES_LIST.Admin), itemsController.deleteItem)
