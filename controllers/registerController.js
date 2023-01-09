@@ -32,8 +32,6 @@ const handleNewUser = async (req, res) => {
         const hashedPwd = await bcrypt.hash(pwd, 10);
         console.log(firstN);
         // create & store the new user
-        // Adreese, zip and by should technically be nested in an object
-        // however, I'm unsure of how to post that data to the database currently.
         const result = await User.create({
             "username": user,
             "fornavn": firstN,
