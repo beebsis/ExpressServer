@@ -1,12 +1,10 @@
-// This is a user, not an employee.
-// Users are useable logins on the site which employees aren't.
-
 const User = require('../model/User');
 
 const getAllUsers = async (req, res) => {
     const users = await User.find();
     if (!users) return res.status(204).json({ 'message': 'No users found' });
     res.json(users);
+    console.log('Test');
 }
 
 const deleteUser = async (req, res) => {

@@ -37,7 +37,7 @@ const handleLogin = async (req, res) => {
         // Creates Secure Cookie with refresh token
         res.cookie('jwt', refreshToken, { 
             httpOnly: true,
-            //secure: true, // Outcomment based on needs by browser or Thunder Client in VSC
+            // secure: true, // Outcomment based on needs by browser or Thunder Client in VSC
             sameSite: 'None',
             maxAge: 24 * 60 * 60 * 1000 });
 

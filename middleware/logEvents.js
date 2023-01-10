@@ -11,7 +11,7 @@ const path = require('path');
 
 // Async, need it to run all the time
 const logEvents = async (message, logName) => {
-    const dateTime = `${format(new Date(), 'ddMMyyyy\tHH:mm:ss')}`;
+    const dateTime = `${format(new Date(), 'dd-MM-yyyy\tHH:mm:ss')}`;
     const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
 
     try {
