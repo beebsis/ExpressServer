@@ -631,3 +631,15 @@
 10-01-2023	11:34:47	96fdaa60-ea0f-4bf4-be60-8f7a57ee8614	GET	undefined	/UserRegister
 10-01-2023	12:41:20	d017ad2d-75a4-4837-8c38-00350f12d194	GET	undefined	/rent
 10-01-2023	14:38:57	d50a04f3-65e3-4f58-8155-fc3004f0f7d6	GET	undefined	/inventory
+11-01-2023	14:12:16	7ceaf3b2-b0b2-4e4d-b98a-86338a5f437d	OPTIONS	http://localhost:3000	/register
+11-01-2023	14:12:16	24b44cd5-922f-4abf-b7b2-2d75a2c2ff27	POST	http://localhost:3000	/register
+11-01-2023	14:12:40	6f04c09c-093f-4463-a50d-0f4a7ee30517	OPTIONS	http://localhost:3000	/register
+11-01-2023	14:12:40	984b3ad7-5f17-4836-ae55-86f52d6f0734	POST	http://localhost:3000	/register
+11-01-2023	14:12:53	26640550-a294-40f8-8c93-035719ee447e	OPTIONS	http://localhost:3000	/register
+11-01-2023	14:12:53	1c247b98-6de8-4d80-9ba6-a20669ed781d	POST	http://localhost:3000	/register
+11-01-2023	14:15:06	63b125ad-c069-4509-a5ef-b220968f7cdf	OPTIONS	http://localhost:3000	/createitem
+11-01-2023	14:15:06	bff71ef6-e343-461c-bddd-e9113bf7e036	POST	http://localhost:3000	/createitem
+11-01-2023	15:15:16	310410e1-b4b5-4eb2-9e9c-6b1d2cbdcd66	OPTIONS	http://localhost:3000	/createitem
+11-01-2023	15:15:16	15cb40b4-80e9-46c2-bdbb-704ad73a0fa7	POST	http://localhost:3000	/createitem
+11-01-2023	15:15:38	9c7869ac-51e2-4896-8826-b80883bcb587	OPTIONS	http://localhost:3000	/createitem
+11-01-2023	15:15:38	79674839-98d1-43cb-9d31-dee690c200aa	POST	http://localhost:3000	/createitem
