@@ -22,6 +22,6 @@ router.route('/')
 
 
 router.route('/:id')
-    .get(verifyRoles(ROLES_LIST.Admin), itemsController.getItem);
+    .get(itemsController.getItem);
 
 module.exports = router;

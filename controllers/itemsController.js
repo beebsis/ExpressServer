@@ -25,4 +25,23 @@ const handleNewItem = async (req, res) => {
 
 }
 
-module.exports = { handleNewItem};
+const getAllItems = async (req, res) => {
+    const items = await Item.find();
+    if (!items) return res.status(204).json({ 'message': 'No items found.'});
+    res.json(items);
+};
+
+const getItem = async (req, res) => {
+    if (!req?.params?.id) return res.status(4000).json({ 'message': 'Gestand ID nødvendigt.'});
+    const item = await Item.findOne({ _id: req.params.id}).exec();
+    if (!item) {
+        return res.status(204).json({ "message": `Ingen genstand matcher det angivet ID nummer ${req.params.id}.`});
+    }
+    res.json(item);
+};
+
+module.exports = {
+    handleNewItem,
+    getAllItems,
+    getItem
+};
