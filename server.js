@@ -47,7 +47,9 @@ app.use('/', express.static(path.join(__dirname, '/public')));
 //  Routes from route dirs
 app.use('/', require('./routes/root'));
 app.use('/register', require('./routes/register'));
+app.use('/users', require('./routes/api/users'));
 app.use('/createItem', require('./routes/createItem'));
+app.use('/items', require('./routes/api/items'));
 app.use('/auth', require('./routes/auth'));
 app.use('/refresh', require('./routes/refresh'));
 app.use('/logout', require('./routes/logout'));

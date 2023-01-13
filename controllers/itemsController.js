@@ -26,9 +26,13 @@ const handleNewItem = async (req, res) => {
 }
 
 const getAllItems = async (req, res) => {
-    const items = await Item.find();
-    if (!items) return res.status(204).json({ 'message': 'No items found.'});
-    res.json(items);
+    Item.find({}, function (err, items) {
+        if(err){
+            res.send('something went wrong!');
+            next();
+        }
+        res.json(items);
+    });
 };
 
 const getItem = async (req, res) => {
