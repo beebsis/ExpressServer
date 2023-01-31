@@ -13,7 +13,7 @@ const handleNewItem = async (req, res) => {
         const result = await Item.create({
             "fabrikant": fabri,
             "model": modelSerie,
-            "type": specType,
+            "typer": specType,
             "serial": vareSerial
         });
         console.log(result);

@@ -17,25 +17,17 @@ const vareSchema = new Schema({
         required: true
     },
     typer: {
-        PC: {
-            type: String,
-            default: 4462
-        },
-        Mouse: Number,
-        Keyboard: Number,
-        Screen: Number
+        type: String,
+        required: true
     },
     serial: {
         type: String,
         required: true
     },
     status: {
-        ind: {
-            type: String,
-            default: 243
-        },
-        ud: Number,
-        reserveret: Number
+        type: String,
+        required: true,
+        default: "ind"
     }
 
 });

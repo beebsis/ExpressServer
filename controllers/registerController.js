@@ -2,8 +2,8 @@ const User = require('../model/User');
 const bcrypt = require('bcrypt');
 
 const handleNewUser = async (req, res) => {
-    const { user,  pwd, firstN, lastN, uniid, stamClass, cpr, address, city, postal} = req.body;
-    if (!user || !pwd || !firstN || !lastN || !uniid || !stamClass || !cpr || !address || !city || !postal) return res.status(400).json({ 'message': 'All fields are required.' });
+    const { user,  pwd, firstN, lastN, email, uniid, stamClass, cpr, address, city, postal} = req.body;
+    if (!user || !pwd || !firstN || !lastN || !email || !uniid || !stamClass || !cpr || !address || !city || !postal) return res.status(400).json({ 'message': 'All fields are required.' });
 
     // check for duplicate usernames in the db
     const username_duplicate = await User.findOne({ username: user}).exec(); // Using exec because of "findOne"
@@ -24,6 +24,7 @@ const handleNewUser = async (req, res) => {
             "username": user,
             "fornavn": firstN,
             "efternavn": lastN,
+            "email": email, 
             "uniId": uniid,
             "stamklasse": stamClass,
             "cprNr": cpr,

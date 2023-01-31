@@ -11,6 +11,97 @@
 
 <body>
     <h1>Index</h1>
+    <section>
+        <h2>Items</h2>
+        <div class="api-wrapper">
+            <div class="api-wrapper-head">
+                <p>Get All <a href="http://localhost:3500/items">/items</a></p>
+            </div>
+            <div class="code-wrapper">
+                <code>
+                    [
+                        {
+                            "_id": "63d8dd43360c01430de216d5",
+                            "fabrikant": "Test fabrikant",
+                            "model": "Test model",
+                            "typer": "PC",
+                            "serial": "2341234",
+                            "status": "Out_Of_Stock",
+                            "__v": 0
+                        }
+                    ]
+                </code>
+            </div>
+        </div>
+        <div class="api-wrapper">
+            <div class="api-wrapper-head">
+                <p>Get based on ID <a href="http://localhost:3500/items/63d8dd43360c01430de216d5">/items/{id}</a></p>
+            </div>
+            <div class="code-wrapper">
+                <code>
+                    {
+                        "_id": "63d8dd43360c01430de216d5",
+                        "fabrikant": "Test fabrikant",
+                        "model": "Test model",
+                        "typer": "PC",
+                        "serial": "2341234",
+                        "status": "Out_Of_Stock",
+                        "__v": 0
+                    }
+                </code>
+            </div>
+        </div>
+        <div class="api-wrapper">
+            <div class="api-wrapper-head">
+                <p>Create item <a href="http://localhost:3500/createItem">/createItem</a></p>
+            </div>
+            <div class="code-wrapper">
+                <code>
+                    {
+                        "fabri": "Razer",
+                        "modelSerie": "Razer Naga pro",
+                        "specType": "Mouse",
+                        "vareSerial": "1343274"
+                    }
+                </code>
+            </div>
+        </div>
+        <div class="api-wrapper">
+            <div class="api-wrapper-head">
+                <p>DELETE <a href="http://localhost:3500/items">/items</a></p>
+            </div>
+            <div class="code-wrapper">
+                <code>
+                    {
+                        "id": "63d8dd43360c01430de216d5"
+                    }
+                </code>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Auth</h2>
+        <div class="api-wrapper">
+            <div class="api-wrapper-head">
+                <p>Get All <a href="http://localhost:3500/items">/items</a></p>
+            </div>
+            <div class="code-wrapper">
+                <code>
+                    [
+                        {
+                            "_id": "63d8dd43360c01430de216d5",
+                            "fabrikant": "Test fabrikant",
+                            "model": "Test model",
+                            "typer": "PC",
+                            "serial": "2341234",
+                            "status": "Out_Of_Stock",
+                            "__v": 0
+                        }
+                    ]
+                </code>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

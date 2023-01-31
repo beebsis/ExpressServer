@@ -12,3 +12,20 @@ body {
     display: grid;
     place-content: center;
 }
+section {
+    padding-left: 2rem;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.code-wrapper {
+    padding-left: 2rem;
+}
+
+.api-wrapper {
+    margin-bottom: 2rem;
+}
+
+.api-wrapper-head {
+    background-color: grey;
+}

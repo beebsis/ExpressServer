@@ -75,5 +75,5 @@ app.use(errorHandler);
 // Check if connected, if not connected don't listen to requests.
 mongoose.connection.once('open', () => {
     console.log('Connected to MongoDB');
-    app.listen(PORT, () => console.log(`Server running on port ${PORT} . visit localhost:${PORT}/`));
+    app.listen(PORT, () => console.log(`Server running on port ${PORT} . visit http://localhost:${PORT}/`));
 })
