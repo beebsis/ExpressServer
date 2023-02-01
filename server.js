@@ -1,3 +1,9 @@
+/** 
+    * ! JWT doesn't seem to work, login works but not the token. 
+    * ? Also manages to get an error message for some reason upon login
+    *
+**/
+
 //express
 require('dotenv').config();
 const express = require('express');
@@ -55,7 +61,7 @@ app.use('/refresh', require('./routes/refresh'));
 app.use('/logout', require('./routes/logout'));
 
 //  Verify routes
-app.use(verifyJWT);
+//app.use(verifyJWT);
 
 // Grabbing non-sites
 app.all('/*', (req, res) => {
