@@ -29,3 +29,8 @@
 13122022	15:16:03	d4c419ab-1292-4562-b6e7-ec0432a034e3	SyntaxError: Unexpected number in JSON at position 157
 14122022	10:31:51	08b49722-95e4-49b3-afdd-d17150566913	SyntaxError: Unexpected token } in JSON at position 154
 31-01-2023	10:18:07	59e8a3de-ab2c-4db6-9a0e-0edd8e31d082	SyntaxError: Unexpected token e in JSON at position 0
+02-02-2023	13:15:48	8d5fd2ba-f39c-45a7-8721-b97b359c6bbe	Error: Not allowed by CORS
+02-02-2023	13:16:00	ac90c2f2-8572-4bb1-a942-e2928f703294	Error: Not allowed by CORS
+02-02-2023	13:18:13	12c08b6f-4cc2-464e-a6f3-6f8ebb2e6620	Error: Not allowed by CORS
+02-02-2023	13:18:37	07644f41-25bc-4e42-af76-d6b69f736b08	Error: Not allowed by CORS
+02-02-2023	13:19:05	5ebc8561-5b2f-4fdc-803d-312a273e2459	Error: Not allowed by CORS

@@ -61,7 +61,7 @@ app.use('/refresh', require('./routes/refresh'));
 app.use('/logout', require('./routes/logout'));
 
 //  Verify routes
-//app.use(verifyJWT);
+app.use(verifyJWT);
 
 // Grabbing non-sites
 app.all('/*', (req, res) => {
