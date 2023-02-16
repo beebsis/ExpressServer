@@ -1,3 +1,9 @@
+/** 
+    * ! JWT doesn't seem to work, login works but not the token. 
+    * ? Also manages to get an error message for some reason upon login
+    *
+**/
+
 //express
 require('dotenv').config();
 const express = require('express');
@@ -47,7 +53,9 @@ app.use('/', express.static(path.join(__dirname, '/public')));
 //  Routes from route dirs
 app.use('/', require('./routes/root'));
 app.use('/register', require('./routes/register'));
+app.use('/users', require('./routes/api/users'));
 app.use('/createItem', require('./routes/createItem'));
+app.use('/items', require('./routes/api/items'));
 app.use('/auth', require('./routes/auth'));
 app.use('/refresh', require('./routes/refresh'));
 app.use('/logout', require('./routes/logout'));
@@ -73,5 +81,5 @@ app.use(errorHandler);
 // Check if connected, if not connected don't listen to requests.
 mongoose.connection.once('open', () => {
     console.log('Connected to MongoDB');
-    app.listen(PORT, () => console.log(`Server running on port ${PORT} . visit localhost:${PORT}/`));
+    app.listen(PORT, () => console.log(`Server running on port ${PORT} . visit http://localhost:${PORT}/`));
 })

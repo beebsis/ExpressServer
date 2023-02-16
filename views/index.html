@@ -10,7 +10,196 @@
 </head>
 
 <body>
-    <h1>Index</h1>
+    <div class="container">
+        <div class="index-header">
+            <h1>Index</h1>
+        </div>
+        <section>
+            <details>
+                <summary class="index-content-header">Items Calls</summary>
+                <div class="api-wrapper">
+                    <div class="api-wrapper-head">
+                        <p>Get All <a href="http://localhost:3500/items">/items</a></p>
+                        <p>GET | ITEMS | <span  class="api-info-location body">BODY</span></p>
+                    </div>
+                    <div class="code-wrapper">
+                        <code>
+                            [
+                                {
+                                    "_id": "63d8dd43360c01430de216d5",
+                                    "fabrikant": "Test fabrikant",
+                                    "model": "Test model",
+                                    "typer": "PC",
+                                    "serial": "2341234",
+                                    "status": "Out_Of_Stock",
+                                    "__v": 0
+                                }
+                            ]
+                        </code>
+                    </div>
+                </div>
+                <div class="api-wrapper">
+                    <div class="api-wrapper-head">
+                        <p>Get based on ID <a href="http://localhost:3500/items/63d8dd43360c01430de216d5">/items/{id}</a></p>
+                        <p>GET | ITEM | <span  class="api-info-location body">BODY</span></p>
+                    </div>
+                    <div class="code-wrapper">
+                        <code>
+                            {
+                                "_id": "63d8dd43360c01430de216d5",
+                                "fabrikant": "Test fabrikant",
+                                "model": "Test model",
+                                "typer": "PC",
+                                "serial": "2341234",
+                                "status": "Out_Of_Stock",
+                                "__v": 0
+                            }
+                        </code>
+                    </div>
+                </div>
+                <div class="api-wrapper">
+                    <div class="api-wrapper-head">
+                        <p>Create item <a href="http://localhost:3500/createItem">/createItem</a></p>
+                        <p>CREATE | ITEM | <span  class="api-info-location body">BODY</span></p>
+                    </div>
+                    <div class="code-wrapper">
+                        <code>
+                            {
+                                "fabri": "Razer",
+                                "modelSerie": "Razer Naga pro",
+                                "specType": "Mouse",
+                                "vareSerial": "1343274"
+                            }
+                        </code>
+                    </div>
+                </div>
+                <div class="api-wrapper">
+                    <div class="api-wrapper-head">
+                        <p>DELETE <a href="http://localhost:3500/items">/items</a></p>
+                        <P>DELETE | ITEM | <span  class="api-info-location body">BODY</span></P>
+                    </div>
+                    <div class="code-wrapper">
+                        <code>
+                            {
+                                "id": "63d8dd43360c01430de216d5"
+                            }
+                        </code>
+                    </div>
+                </div>
+            </details>
+            
+        </section>
+        <section>
+            <details>
+                <summary class="index-content-header">Auth Calls</summary>
+                <div class="api-wrapper">
+                    <div class="api-wrapper-head">
+                        <p>User Login <a href="http://localhost:3500/auth">/auth</a></p>
+                        <p>POST | AUTH | <span  class="api-info-location body">BODY</span></p>
+                    </div>
+                    <div class="code-wrapper">
+                        <code>
+                            { "user": "username", "pwd": "password" }
+                        </code>
+                    </div>
+                </div>
+                <div class="api-wrapper">
+                    <div class="api-wrapper-head">
+                        <p>User Register <a href="http://localhost:3500/register">/register</a></p>
+                        <p>POST | REGISTER | <span  class="api-info-location body">BODY</span></p>
+                    </div>
+                    <div class="code-wrapper">
+                        <code>
+                            {
+                                "user": "username",
+                                "pwd": "password",
+                                "firstN": "firstname",
+                                "lastN": "lastname",
+                                "email": "edu email",
+                                "uniid": "uni ID",
+                                "stamClass": "class/team",
+                                "cpr": "0000000000",
+                                "address": "address",
+                                "postal": "postal/zip",
+                                "city": "city"
+                            }
+                        </code>
+                    </div>
+                </div>
+                <div class="api-wrapper">
+                    <div class="api-wrapper-head">
+                        <p>Get users <a href="http://localhost:3500/users">/users</a></p>
+                        <p>GET | USERS | <span  class="api-info-location body">BODY</span></p>
+                    </div>
+                    <div class="code-wrapper">
+                        <code>
+                            [
+                                {
+                                    "roles": {
+                                        "Admin": 100,
+                                        "User": 50,
+                                        "Editor": 75
+                                    },
+                                    "_id": "639acea365ae539a0d5a06d3",
+                                    "username": "Admin",
+                                    "password": "$2b$10$P.oXEO7pxnnI3M/D8yIPIO85YZedhXuXza0J/PCvhTvABlGHF7wgy",
+                                    "fornavn": "Admin",
+                                    "efternavn": "Admin",
+                                    "uniId": "Admin1",
+                                    "stamklasse": "NONE",
+                                    "cprNr": "0000000000",
+                                    "adresse": "NONE",
+                                    "zip": "0000",
+                                    "by": "NONE",
+                                    "__v": 0,
+                                    "refreshToken": "",
+                                    "email": "admin@edu.sde.dk"
+                                }
+                            ]
+                        </code>
+                    </div>
+                </div>
+                <div class="api-wrapper">
+                    <div class="api-wrapper-head">
+                        <p>Get User <a href="http://localhost:3500/users/63d906cf2dbb43323d82efb7">/users/{id}</a></p>
+                        <p>GET | USERS | <span class="api-info-location body">BODY</span></p>
+                    </div>
+                    <div class="code-wrapper">
+                        <code>
+                            {
+                                "roles": {
+                                    "User": 50
+                                },
+                                "_id": "63d906cf2dbb43323d82efb7",
+                                "username": "lawtribal",
+                                "password": "$2b$10$/NaCwWkp9Mn0QJYhLKlgreRxf5UOkRGUubaxUvXH3PrnUNQeK7nYK",
+                                "fornavn": "Casper",
+                                "efternavn": "Jensen",
+                                "uniId": "casp7243",
+                                "stamklasse": "H234",
+                                "cprNr": "0000005000",
+                                "adresse": "Odensvej 51",
+                                "zip": "5560",
+                                "by": "Odense",
+                                "__v": 0
+                            }
+                        </code>
+                    </div>
+                </div>
+                <div class="api-wrapper">
+                    <div class="api-wrapper-head">
+                        <p>Refresh Token <a href="http://localhost:3500/refresh">/refresh</a></p>
+                        <p>GET | REFRESH | <span class="api-info-location bearer">BEARER TOKEN</span></p>
+                    </div>
+                    <div class="code-wrapper">
+                        <code>
+                            eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IkFkbWluIiwicm9sZXMiOls1MCw3NSwxMDBdfSwiaWF0IjoxNjc1MTU2Njc4LCJleHAiOjE2NzUxNTY2ODh9.T23ys39KirNq6NKbsG2PBP82PfR1AxWbkyTrviUbXqc
+                        </code>
+                    </div>
+                </div>
+            </details>
+        </section>
+    </div>
 </body>
 
 </html>
